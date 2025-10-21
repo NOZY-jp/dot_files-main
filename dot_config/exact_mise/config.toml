@@ -1,0 +1,10 @@
+[tools]
+chezmoi = "latest"
+gh = "latest"
+go = "latest"
+jj = "latest"
+neovim = "latest"
+pnpm = "latest"
+python = "latest"
+rust = "latest"
+zoxide = "latest"
