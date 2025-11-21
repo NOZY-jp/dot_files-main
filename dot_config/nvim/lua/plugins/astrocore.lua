@@ -43,11 +43,24 @@ return {
         spell = false, -- sets vim.opt.spell
         signcolumn = "yes", -- sets vim.opt.signcolumn to yes
         wrap = false, -- sets vim.opt.wrap
+        clipboard = "unnamed",
       },
       g = { -- vim.g.<key>
         -- configure global vim variables (vim.g)
         -- NOTE: `mapleader` and `maplocalleader` must be set in the AstroNvim opts or before `lazy.setup`
         -- This can be found in the `lua/lazy_setup.lua` file
+        clipboard = {
+          name = "myClipboard",
+          copy = {
+            ["+"] = "win32yank.exe -i",
+            ["*"] = "win32yank.exe -i",
+          },
+          paste = {
+            ["+"] = "win32yank.exe -o",
+            ["*"] = "win32yank.exe -o",
+          },
+          cache_enabled = 1,
+        },
       },
     },
     -- Mappings can be configured through AstroCore as well.

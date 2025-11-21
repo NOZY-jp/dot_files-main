@@ -17,6 +17,7 @@ yt-dlp = "latest"
 yazi = "latest"
 jq = "latest"
 claude = "latest"
+fastfetch = "latest"
 
 [env]
 EDITOR = "nvim"
